@@ -10,9 +10,7 @@ ConnectDB();
 app.use(cors());
 app.use(express.json());
 
-app.get("/",(req,res)=>{
-    res.json("server start")
-})
+
 app.use(router);
 app.use(express.static(path.join(__dirname,'/client/build')))
 app.get("*",function(req,res){
