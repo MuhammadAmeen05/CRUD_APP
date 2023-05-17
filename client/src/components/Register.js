@@ -35,7 +35,7 @@ const Register = () => {
 
         const { name, email, work, add, mobile, desc, age } = inpval;
 
-        const res = await fetch("http://localhost:8003/register", {
+        const res = await fetch("https://emerald-lizard-kit.cyclic.app/register", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
