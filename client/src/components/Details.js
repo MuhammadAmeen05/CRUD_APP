@@ -23,7 +23,7 @@ const Details = () => {
 
     const getdata = async () => {
 
-        const res = await fetch(`http://localhost:8003/getuser/${id}`, {
+        const res = await fetch(`getuser/${id}`, {
             method: "GET",
             headers: {
                 "Content-Type": "application/json"
